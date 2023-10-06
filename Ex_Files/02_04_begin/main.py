@@ -1,6 +1,10 @@
 NAMES = ["John", "Paul", "George", "Ringo"]
 AGES = [20, 21, 22, 23]
 
+jp = NAMES[:2]      # first 2 from list
+gr = NAMES[2:]      # last 2 from list
+print(jp, gr)
+
 i = 0
 while i < len(NAMES):
     print(NAMES[i], AGES[i])
@@ -19,6 +23,5 @@ for i in range(5):
     print(i)
 
 # enumerate
-for i,name in enumerate(NAMES):
-    print(i,name)
-    
+for i, name in enumerate(NAMES):
+    print(f'{i} - {name}')
